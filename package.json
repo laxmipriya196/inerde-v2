@@ -2,7 +2,7 @@
   "name": "inerde-v2",
   "private": true,
   "version": "0.0.0",
-  "description": "A starter project for AngularJS",
+  "description": "npm conf for iNerde",
   "repository": "https://github.com/laxmipriya196/inerde-v2",
   "license": "MIT",
   "devDependencies": {
