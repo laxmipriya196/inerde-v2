@@ -1,12 +1,21 @@
 'use strict';
 
 // Declare app level module which depends on views, and components
-angular.module('myApp', [
+var iNERDE_App = angular.module('iNERDE_App', [
   'ngRoute',
-  'myApp.view1',
-  'myApp.view2',
-  'myApp.version'
-]).
-config(['$routeProvider', function($routeProvider) {
-  $routeProvider.otherwise({redirectTo: '/view1'});
-}]);
+  'iNERDE_Controllers',
+]);
+/*iNERDE_App.config(['$routeProvider',
+        function($routeProvider) {
+                $routeProvider.
+        when('/',{
+               templateUrl:'partials/',
+            controller:''
+        }).
+            otherwise({
+                redirectTo: '/#'
+            });
+}]); */
+
+
+
