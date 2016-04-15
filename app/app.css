@@ -13,6 +13,7 @@
  width: 333px;
  top: 50px;
  min-width: 1px;
+ cursor: pointer;
 }
 
 .menu {
@@ -25,12 +26,29 @@
   text-align: center;
   cursor: pointer;
 }
-ul li: hover{
-color: green;
+
+.list-item-inline:hover{
+ color: green;
 }
+
+.list-item-inline:hover .list-item {
+ color: #585858;
+}
+
+.list-item:hover{
+ color:green;
+} 
 
 .list-inline > li {
  display: inline-block;
  padding-right: 19px;
  padding-left: 19px;
+}
+
+.dropdown-content {
+ display: none;
+ position: absolute;
+ font-size: 14px;
+ min-width: 160px;
+ box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }

@@ -15,29 +15,28 @@
 </head>
 <body>
    <header>
-   <div class="container"style="position: fixed;" >
+     <div class="container"style="position: fixed;" >
         <div class="row" style="position: fixed; width: 100%" >
             <div class="col-xs-4 topbar" style="background-color:green;"></div>  
             <div class="col-xs-4 topbar" style="background-color:yellow;"></div>
             <div class="col-xs-4 topbar" style="background-color:red;"></div>
         </div>
-        <!--      </div> -->
-   </header> 
-
+     </div>
+   </header>
    <div class="logo"  ng-controller="imgCtrl">
      <img ng-src="{{image}}" class="ng-responsive-image"/>
- </div>
- </div>
+   </div>
    <div ng-controller="menuCtrl" class="menu"> 
      <ul class="list-inline">       
-         <li class="list-item-inline" ng-repeat="menuitem in menuitems" ng-click="showSubMenu(menuitems,$index)" >{{menuitem.name}}</li>
+       <li class="list-item-inline" ng-repeat="menuitem in menuitems" ng-mouseover="showSubMenu(menuitem)" ng-mouseleave="hideSubMenu(menuitem)" >{{menuitem.name}}
+       <div class="dropdown-content" ng-style="{display: menuitem.mydisplay}">
+           <ul class="list">
+             <li class="list-item" ng-repeat="subitem in menuitem.subitems" ng-style="dropdown-content">{{subitem}}</li>
+           </ul>
+         </div>
+       </li> 
      </ul>
-  <ul ng-style="subLeft">
-    <li ng-repeat="subitem in subitems">
-      <a ng-href="{{subitem.href}}" target="{{subitem.target}}" >{{subitem.name}}</a>
-    </li>
-  </ul>
-</div>
+  </div>
 
   <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
