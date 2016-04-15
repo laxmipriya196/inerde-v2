@@ -36,8 +36,12 @@
 }
 
 .list-item:hover{
- color:green;
+ color:green !important;
 } 
+
+.list-item:hover .list-item-inline{
+ color: #585858 !important;
+}
 
 .list-inline > li {
  display: inline-block;
@@ -48,7 +52,10 @@
 .dropdown-content {
  display: none;
  position: absolute;
- font-size: 14px;
+ padding: 10px;
+ text-align: left;
+ width: auto;
+ font-size: 12px;
  min-width: 160px;
  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }

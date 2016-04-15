@@ -26,12 +26,12 @@ var menuitems = [
     {
       mydisplay: "none",
       name: 'GIVE',
-      subitems : ['Give Via Generosity (Dec 2015 Campaign)','Give Via PayPal','GLOBAL GIVING', '']
+      subitems : ['Give Via Generosity (Dec 2015 Campaign)','Give Via PayPal','GLOBAL GIVING']
     },
      { 
       mydisplay: "none",
       name: 'ADOPT-A-NERDY-SCHOOL',
-      subitems:['2015 Partner schools','','','','']
+      subitems : ['2015 Partner schools','L’École du Progrès','L’École Publique de Badalabougou','L’École de la Paix','L’École Les Castors']
     },
     {
       mydisplay: "none",
