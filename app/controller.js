@@ -26,32 +26,37 @@ var menuitems = [
     {
       mydisplay: "none",
       name: 'GIVE',
-      subitems : ['Give Via Generosity (Dec 2015 Campaign)','Give Via PayPal','GLOBAL GIVING']
+      subitems : [{name: 'Give Via Generosity (Dec 2015 Campaign)', id:'gvfd2015'},{name:'Give Via PayPal',id:'y'},{name:'GLOBAL GIVING',id:'z'}]
     },
      { 
       mydisplay: "none",
       name: 'ADOPT-A-NERDY-SCHOOL',
-      subitems : ['2015 Partner schools','L’École du Progrès','L’École Publique de Badalabougou','L’École de la Paix','L’École Les Castors']
+      subitems : [{name:'2015 Partner schools',id:'x2'},{name:'L’École du Progrès', id:'y2'},
+        {name:'L’École Publique de Badalabougou', id:'z2'},
+        {name:'L’École de la Paix',id:'l2'},
+        {name:'L’École Les Castors',id:'m2'}]
     },
     {
       mydisplay: "none",
       name: 'ABOUT iNERDE',
-      subitems: ['OUR STORY','FAQs','THE NERDY TEAM']
+      subitems: [{name:'OUR STORY',id:'x2'},
+      {name:'FAQs', id:'y2'},
+      {name:'THE NERDY TEAM',id:'z2'}]
     },
     {
       mydisplay: "none",
       name: 'PROGRAMS',
-      subitems: ['2015 STEM CAMP','2014 STEM CAMP','OUR CURRICULUM']
+      subitems: [{name:'2015 STEM CAMP', id:'x3'},{name:'2014 STEM CAMP', id:'x3'},{name:'OUR CURRICULUM', id:'x3'}]
     },
     {
       mydisplay: "none",
       name: 'NEWS & BLOGS',
-      subitems: ['NERDY NEWS','NERDY BLOG','GALLERY']
+      subitems: [{name:'NERDY NEWS', id:'x3'},{name:'NERDY BLOG', id:'x3'},{name:'GALLERY', id:'x3'}]
     },
     {
       mydisplay: "none",
       name: 'GET INVOLVED',
-      subitems: ['VOLUNTEER','EMPOWERMENT AGENT','CONTACT']
+      subitems: [{name:'VOLUNTEER', id:'x3'},{name:'EMPOWERMENT AGENT', id:'x3'},{name:'CONTACT', id:'x3'}]
     }];
 
 

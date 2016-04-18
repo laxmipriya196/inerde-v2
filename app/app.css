@@ -44,8 +44,8 @@
 }
 
  table, td {
- position: relative;
- left: -15px;
+ /*position: relative;
+ left: -15px;*/
  width: 200px;
  text-align: left;
  padding: 10px;
@@ -62,9 +62,6 @@
 .dropdown-content {
  display: none;
  position: absolute;
- padding: 10px;
- text-align: left;
- width: auto;
  font-size: 12px;
  min-width: 160px;
 }

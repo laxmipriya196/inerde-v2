@@ -31,8 +31,8 @@
        <li class="list-item-inline" ng-repeat="menuitem in menuitems" ng-mouseover="showSubMenu(menuitem)" ng-mouseleave="hideSubMenu(menuitem)" >{{menuitem.name}}
          <div class="dropdown-content" ng-style="{display: menuitem.mydisplay}">
            <table>
-             <tr ng-repeat="subitem in menuitem.subitems" class='submenu-item'>
-               <td>{{ subitem }}</td>
+             <tr ng-repeat="subitem in menuitem.subitems" class='submenu-item' >
+                 <td> <a href="#/{{subitem.id}}">{{ subitem.name }} </a></td>
              </tr>
            </table>
          </div>
