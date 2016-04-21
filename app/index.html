@@ -2,31 +2,47 @@
 <!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="iNERDE_App" class="no-js"> <!--<![endif]-->
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>My AngularJS App</title>
-  <meta name="description" content="">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>iNERDE - Empowering Youth with Opportunity</title>
+  <meta name="description" content="iNERDE has a plan for radical development in Africa. Our goal is to provide African youth the opportunity to discover their potential through STEM Education">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
-  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
+  <link rel="shortcut icon" type="image/x-icon" href="images/favi2.ico" />
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
   <link rel="stylesheet" href="app.css">
-  <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 <body>
-  <ul class="menu">
-    <li><a href="#/view1">view1</a></li>
-    <li><a href="#/view2">view2</a></li>
-  </ul>
+   <header>
+     <div class="container"style="position: fixed;" >
+        <div class="row" style="position: fixed; width: 100%" >
+            <div class="col-xs-4 topbar" style="background-color:green;"></div>  
+            <div class="col-xs-4 topbar" style="background-color:yellow;"></div>
+            <div class="col-xs-4 topbar" style="background-color:red;"></div>
+        </div>
+     </div>
+   </header>
+   <div class="logo"  ng-controller="imgCtrl">
+     <img ng-src="{{image}}" class="ng-responsive-image"/>
+   </div>
+   <div ng-controller="menuCtrl" class="menu"> 
+     <ul class="list-inline">       
+       <li class="list-item-inline" ng-repeat="menuitem in menuitems" ng-mouseover="showSubMenu(menuitem)" ng-mouseleave="hideSubMenu(menuitem)" >{{menuitem.name}}
+         <div class="dropdown-content" ng-style="{display: menuitem.mydisplay}">
+           <table>
+             <tr ng-repeat="subitem in menuitem.subitems" class='submenu-item' >
+                 <td> <a href="#/{{subitem.id}}">{{ subitem.name }} </a></td>
+             </tr>
+           </table>
+         </div>
+       </li> 
+     </ul>
+   </div>
 
   <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
-
-  <div ng-view></div>
-
-  <div>Angular seed app: v<span app-version></span></div>
 
   <!-- In production use:
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
@@ -34,10 +50,10 @@
   <script src="bower_components/angular/angular.js"></script>
   <script src="bower_components/angular-route/angular-route.js"></script>
   <script src="app.js"></script>
-  <script src="view1/view1.js"></script>
-  <script src="view2/view2.js"></script>
   <script src="components/version/version.js"></script>
   <script src="components/version/version-directive.js"></script>
   <script src="components/version/interpolate-filter.js"></script>
+  <script src="controller.js"></script>
 </body>
+<div ng-view class="content-holder"></div>
 </html>
