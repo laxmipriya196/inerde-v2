@@ -26,37 +26,38 @@ var menuitems = [
     {
       mydisplay: "none",
       name: 'GIVE',
-      subitems : [{name: 'Give Via Generosity (Dec 2015 Campaign)', id:'gvfd2015'},{name:'Give Via PayPal',id:'y'},{name:'GLOBAL GIVING',id:'z'}]
+      subitems : [{name: 'Give Via Generosity (Dec 2015 Campaign)', id:'x'},{name:'Give Via PayPal',id:'y'},{name:'GLOBAL GIVING',id:'global-giving'}]
     },
      { 
       mydisplay: "none",
       name: 'ADOPT-A-NERDY-SCHOOL',
-      subitems : [{name:'2015 Partner schools',id:'x2'},{name:'L’École du Progrès', id:'y2'},
-        {name:'L’École Publique de Badalabougou', id:'z2'},
-        {name:'L’École de la Paix',id:'l2'},
-        {name:'L’École Les Castors',id:'m2'}]
+      subitems : [{name:'2015 Partner schools',id:'2015-stem-camps'},
+        {name:'L’École du Progrès', id:'lecole-du-progres'},
+        {name:'L’École Publique de Badalabougou', id:'lecole-publique'},
+        {name:'L’École de la Paix',id:'lecole-de-la-paix'},
+        {name:'L’École Les Castors',id:'lecole-les-castors'}]
     },
     {
       mydisplay: "none",
       name: 'ABOUT iNERDE',
-      subitems: [{name:'OUR STORY',id:'x2'},
-      {name:'FAQs', id:'y2'},
-      {name:'THE NERDY TEAM',id:'z2'}]
+      subitems: [{name:'OUR STORY',id:'our-story'},
+      {name:'FAQs', id:'faqs'},
+      {name:'THE NERDY TEAM',id:'the-nerdy-team'}]
     },
     {
       mydisplay: "none",
       name: 'PROGRAMS',
-      subitems: [{name:'2015 STEM CAMP', id:'x3'},{name:'2014 STEM CAMP', id:'x3'},{name:'OUR CURRICULUM', id:'x3'}]
+      subitems: [{name:'2015 STEM CAMP', id:'2015-stem-camp'},{name:'2014 STEM CAMP', id:'2014-stem-camp'},{name:'OUR CURRICULUM', id:'our-curriculum'}]
     },
     {
       mydisplay: "none",
       name: 'NEWS & BLOGS',
-      subitems: [{name:'NERDY NEWS', id:'x3'},{name:'NERDY BLOG', id:'x3'},{name:'GALLERY', id:'x3'}]
+      subitems: [{name:'NERDY NEWS', id:'nerdy-news'},{name:'NERDY BLOG', id:'nerdy-blog'},{name:'GALLERY', id:'gallery'}]
     },
     {
       mydisplay: "none",
       name: 'GET INVOLVED',
-      subitems: [{name:'VOLUNTEER', id:'x3'},{name:'EMPOWERMENT AGENT', id:'x3'},{name:'CONTACT', id:'x3'}]
+      subitems: [{name:'VOLUNTEER', id:'volunteer'},{name:'EMPOWERMENT AGENT', id:'empowerment-agent'},{name:'CONTACT', id:'contact'}]
     }];
 
 
